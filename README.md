@@ -7,6 +7,7 @@ Ubicación de los sensores: Frente, Oreja, Dedo indice.
 
 Formato: 23 archivos de sujetos CSV
 
+
 Codigo para extraer los archivos .mat a .csv:
 
     % Definir carpetas de entrada y salida
@@ -24,7 +25,8 @@ Codigo para extraer los archivos .mat a .csv:
 
     % Procesar cada archivo .MAT
     for k = 1:length(archivos)
-    archivo_mat = fullfile(carpeta_mat, archivos(k).name);
+    archivo_mat = fullfile(carpeta_mat, archivos(k).name);[Sujeto_1.csv](https://github.com/user-attachments/files/19451017/Sujeto_1.csv)
+
     fprintf('Procesando archivo: %s\n', archivos(k).name);
     
     % Cargar datos
