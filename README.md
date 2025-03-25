@@ -9,21 +9,21 @@ Formato: 23 archivos de sujetos CSV
 
 Codigo para pasar extraer los archivos .mat a .csv:
 
-% Definir carpetas de entrada y salida
-carpeta_mat = 'archivos_mat'; 
-carpeta_csv = 'guardar_csv';  
+    % Definir carpetas de entrada y salida
+    carpeta_mat = 'archivos_mat'; 
+    carpeta_csv = 'guardar_csv';  
 
-% Crear carpeta de salida si no existe
-if ~exist(carpeta_csv, 'dir')
+    % Crear carpeta de salida si no existe
+    if ~exist(carpeta_csv, 'dir')
     mkdir(carpeta_csv);
-end
+    end
 
-% Obtener archivos .MAT en la carpeta
-archivos = dir(fullfile(carpeta_mat, '*.mat')); % Buscar archivos con extensión .mat
+    % Obtener archivos .MAT en la carpeta
+    archivos = dir(fullfile(carpeta_mat, '*.mat')); % Buscar archivos con extensión .mat
 
 
-% Procesar cada archivo .MAT
-for k = 1:length(archivos)
+    % Procesar cada archivo .MAT
+    for k = 1:length(archivos)
     archivo_mat = fullfile(carpeta_mat, archivos(k).name);
     fprintf('Procesando archivo: %s\n', archivos(k).name);
     
@@ -52,5 +52,4 @@ for k = 1:length(archivos)
     else
         fprintf('El archivo %s no contiene las variables requeridas.\n', archivos(k).name);
     end
-end
 
