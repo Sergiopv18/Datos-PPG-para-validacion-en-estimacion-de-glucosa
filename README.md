@@ -1,5 +1,5 @@
 # Datos-PPG-para-validacion-en-estimacion-de-glucosa
-Este repositorio contiene registros de señales PPG junto con información asociada. Su objetivo es proporcionar una herramienta de validación para desarrollos relacionados con la estimación de niveles de glucosa en sangre.
+Este repositorio contiene registros de 23 sujetos donde se puede observa informacion del tiempo, registros PPG extraídos de la frente, oreja y dedo índice. Su objetivo es proporcionar una herramienta lo cual nos permita extraer archivos .MAT a .CSV y asi lograr observar los datos y graficar en MATLAB cada individuo. Con el fin de tener validación para desarrollos relacionados con la estimación de niveles de glucosa en sangre.
 
 Contenido del Repositorio:
 
@@ -7,7 +7,7 @@ Ubicación de los sensores: Frente, Oreja, Dedo indice.
 
 Formato: 23 archivos de sujetos CSV
 
-Codigo para pasar extraer los archivos .mat a .csv:
+Codigo para extraer los archivos .mat a .csv:
 
     % Definir carpetas de entrada y salida
     carpeta_mat = 'archivos_mat'; 
