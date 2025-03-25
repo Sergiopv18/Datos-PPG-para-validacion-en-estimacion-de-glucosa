@@ -55,6 +55,6 @@ Codigo para extraer los archivos .mat a .csv:
         fprintf('El archivo %s no contiene las variables requeridas.\n', archivos(k).name);
     end
     
-mv /ruta/del/archivo.csv ./repositorio_ppg/data/
+
 
 
